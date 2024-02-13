@@ -40,7 +40,7 @@ collision(x, y) {
 
   renderGameState() {
     for (let i = 0; i < this.grid.length; i++) {
-      for (let j = 0; jk < this.grid[i].length; j++) {
+      for (let j = 0; j < this.grid[i].length; j++) {
         let cell = this.grid[i][j]
         this.ctx.fillStyle = COLORS[cell]
         this.ctx.fillRect(j, i, 1, 1)
@@ -60,7 +60,7 @@ collision(x, y) {
       } else if (this.collision(this.fallingPiece.x, this.fallingPiece.y + 1)) {
           const shape = this.fallingPiece.shape
           const x = this.fallingPiece.x
-          const y = thisfallingPiece.y
+          const y = this.fallingPiece.y
           shape.map((row, i) => {
             row.map((cell, j) => {
                 let p = x + j
