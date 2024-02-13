@@ -108,7 +108,7 @@ collision(x, y) {
       if (this.fallingPiece !== null) {
         let shape = this.fallingPiece.shape
         //transpose of matrix
-        for (let y = 0; y < shape.length; ++y){
+        for (let y = 0; y < Shape.length; ++y){
           for (let x = 0; x < y; ++x) {
               [this.fallingPiece.shape[x][y], this.fallingPiece.shape[y][x]]=
               [this.fallingPiece.shape[y][x], this.fallingPiece.shape[x][y]]
