@@ -50,3 +50,22 @@ const fullSend = () => {
 
  scoreboard.innerHTML = "Score: " + String(score)
 }
+
+// KeyboardGameControl EventListener
+document.addEventListener("keydown", (e) => {
+  e.preventDefault()
+  switch(e.key) {
+    case "w":
+        model.rotate()
+      break
+    case "d":
+        model.move(true)
+        break
+    case "s":
+        model.moveDown()
+        break
+        case "a":
+          model.move(false)
+          break
+  }
+})
